@@ -20,7 +20,7 @@ export default function Sem1CLayout({ children }: { children: React.ReactNode })
         {/* Main Area */}
         <div className="flex-1 flex flex-col">
           {/* Page Content */}
-          <main className="flex-1 overflow-y-auto px- 6">
+          <main className="flex-1 overflow-y-auto">
             {children}
           </main>
         </div>

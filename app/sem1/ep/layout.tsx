@@ -12,11 +12,11 @@ export default function Sem1EpLayout({ children }: { children: React.ReactNode }
     <div className="sem1-ep-root min-h-screen">
       <Navbar />
 
-      <div className="flex flex-1">
+      <div className="flex bg-[#1b0d00] flex-1">
         <Sidebar />
 
         <div className="flex-1 flex flex-col">
-          <main className="flex-1 overflow-y-auto px-6">{children}</main>
+          <main className="flex-1 overflow-y-auto">{children}</main>
         </div>
       </div>
     </div>
