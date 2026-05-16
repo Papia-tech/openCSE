@@ -37,9 +37,13 @@ export default function Sidebar() {
         </h2>
         <ul className="flex-1 overflow-y-auto space-y-0">
           {chapters.map((ch) => {
-            const active = pathname === `/sem6/ml/${ch.id}`;
+            const active =
+              pathname === `/sem6/ml/${ch.id}` ||
+              (ch.subTopics?.some(
+                (sub) => sub.isPage && pathname === `/sem6/ml/${sub.id}`
+              ) ?? false);
             return (
-              <li key={ch.id}>
+              <li key={ch.id} className="flex flex-col">
                 <Link
                   href={`/sem6/ml/${ch.id}`}
                   className={`block px-3 py-2 text-xl transition ${
@@ -48,6 +52,25 @@ export default function Sidebar() {
                 >
                   {ch.title}
                 </Link>
+                {active && ch.subTopics && (
+                  <ul className="ml-4 border-l-2 border-[#1B0D00]/20 pl-2 my-2 space-y-2">
+                    {ch.subTopics.map((sub) => {
+                      const subActive = sub.isPage && pathname === `/sem6/ml/${sub.id}`;
+                      return (
+                        <li key={sub.id}>
+                          <Link
+                            href={sub.isPage ? `/sem6/ml/${sub.id}` : `/sem6/ml/${ch.id}#${sub.id}`}
+                            className={`block text-sm transition hover:font-bold ${
+                              subActive ? "text-black font-bold" : "text-[#3a2a14] hover:text-black"
+                            }`}
+                          >
+                            {sub.title}
+                          </Link>
+                        </li>
+                      );
+                    })}
+                  </ul>
+                )}
               </li>
             );
           })}
