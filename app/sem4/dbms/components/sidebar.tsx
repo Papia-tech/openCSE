@@ -17,8 +17,8 @@ export default function Sidebar() {
   const chapters = [
     { id: "ch0", title: "Course Outline" },
     { id: "ch1", title: "Introduction to Databases" },
-    // { id: "ch2", title: "Entity-Relationship Model" },
-    // { id: "ch3", title: "Relational Model and SQL" },
+     { id: "ch2", title: "Entity-Relationship Model" },
+     { id: "ch3", title: "Relational Model and SQL" },
     // { id: "ch4", title: "Normalization" },
     // { id: "ch5", title: "Transactions and Concurrency Control" },
     // { id: "ch6", title: "Indexing and Hashing" },

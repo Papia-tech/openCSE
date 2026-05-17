@@ -15,7 +15,7 @@ export const Ch2Content = () => {
           <span className="section-subheading">What is the ER Model?</span>
         </h3>
         <ul className="section-list">
-          <li>The ER Model is a blueprint for designing a database before coding.</one>
+          <li>The ER Model is a blueprint for designing a database before coding.</li>
           <li>It helps translate real-world requirements into a visual diagram.</li>
           <li>Proposed by Peter Chen in 1976.</li>
           <li>The ER Diagram (ERD) is later converted into relational tables.</li>
