@@ -13,7 +13,6 @@ export default function Footer() {
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
-
   return (
     <footer className="bg-[#1B0D00] text-[#FAE8D7] py-12 px-6 border-t-4 border-[#2b1b0e]">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12">
@@ -59,7 +58,7 @@ export default function Footer() {
               <Mail size={24} />
             </a>
           </div>
-          
+
           <button 
             onClick={scrollToTop}
             className="flex items-center gap-2 mt-6 text-lg hover:text-[#d2b48c] transition"
