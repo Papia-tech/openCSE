@@ -17,6 +17,7 @@ export default function Sidebar() {
   const chapters = [
     { id: "ch0", title: "Course Outline" },
     { id: "ch1", title: "Arrays" },
+    { id: "ch2", title: "Linked Lists" },
   ];
 
     const quizSlugMap: Record<string, string> = {
