@@ -59,7 +59,7 @@ export const KMeansContent = () => (
         <div className="card bg-[#e6d0a7] p-4 rounded-lg shadow-sm border border-[#c7a669] text-[#2b1d0f]">
           <h5 className="font-bold mb-2">The Elbow Method</h5>
           <p className="text-sm">
-            Used to determine the optimal <span className="font-mono">k</span>. Run K-Means for various k values and plot the <strong>Inertia</strong> (within-cluster sum of squares). The "elbow" point where inertia starts decreasing linearly is the optimal k.
+            Used to determine the optimal <span className="font-mono">k</span>. Run K-Means for various k values and plot the <strong>Inertia</strong> (within-cluster sum of squares). The &quot;elbow&quot; point where inertia starts decreasing linearly is the optimal k.
           </p>
         </div>
         <div className="card bg-[#e6d0a7] p-4 rounded-lg shadow-sm border border-[#c7a669] text-[#2b1d0f]">

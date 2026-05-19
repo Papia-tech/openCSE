@@ -9,12 +9,12 @@ export const VirtualAssistantContent = () => (
       <div className="note-box bg-[#f3e7c2] border-l-4 border-[#1B0D00] p-4 text-[#1B0D00] mb-8">
         <h4 className="font-bold mb-2">The 5-Stage VPA Pipeline</h4>
         <ol className="list-decimal pl-5 text-sm space-y-2">
-          <li><strong>Wake Word Detection:</strong> A lightweight, always-on edge model listens for a trigger phrase (e.g., "Hey Siri") without sending continuous audio to the cloud.</li>
+          <li><strong>Wake Word Detection:</strong> A lightweight, always-on edge model listens for a trigger phrase (e.g., &quot;Hey Siri&quot;) without sending continuous audio to the cloud.</li>
           <li><strong>Speech Recognition (ASR):</strong> Converts the spoken user command into text format.</li>
           <li><strong>Natural Language Understanding (NLU):</strong> 
             <ul className="list-disc pl-5 mt-1 text-xs">
-              <li><i>Intent Detection:</i> Determines the core action (e.g., 'Set Alarm').</li>
-              <li><i>Entity Extraction:</i> Pulls out parameters (e.g., '7:00 AM').</li>
+              <li><i>Intent Detection:</i> Determines the core action (e.g., &apos;Set Alarm&apos;).</li>
+              <li><i>Entity Extraction:</i> Pulls out parameters (e.g., &apos;7:00 AM&apos;).</li>
             </ul>
           </li>
           <li><strong>Action Execution:</strong> Triggers internal device APIs (adjust thermostat) or external web APIs (fetch weather).</li>

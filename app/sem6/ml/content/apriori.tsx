@@ -33,7 +33,7 @@ export const AprioriContent = () => (
       <div className="note-box mt-6 bg-[#f3e7c2] border-l-4 border-[#1B0D00] p-4 text-[#1B0D00]">
         <h4 className="font-bold mb-1">The Apriori Property (Anti-Monotonicity)</h4>
         <p className="text-sm">
-          <strong>"If an itemset is frequent, then all of its subsets must also be frequent."</strong><br />
+          <strong>&quot;If an itemset is frequent, then all of its subsets must also be frequent.&quot;</strong><br />
           Conversely: If an itemset is infrequent, all its supersets will also be infrequent. This rule allows the algorithm to aggressively prune the search space without counting every combination.
         </p>
       </div>

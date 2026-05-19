@@ -23,13 +23,13 @@ export const MlopsDeploymentContent = () => (
 <span className="text-[#c586c0]">from</span> flask <span className="text-[#c586c0]">import</span> Flask, request, jsonify<br/><br/>
 
 <span className="text-[#4ec9b0]">app</span> = Flask(__name__)<br/>
-model = pickle.load(<span className="text-[#4ec9b0]">open</span>(<span className="text-[#ce9178]">'model.pkl'</span>, <span className="text-[#ce9178]">'rb'</span>))<br/><br/>
+model = pickle.load(<span className="text-[#4ec9b0]">open</span>(<span className="text-[#ce9178]">&apos;model.pkl&apos;</span>, <span className="text-[#ce9178]">&apos;rb&apos;</span>))<br/><br/>
 
-<span className="text-[#dcdcaa]">@app.route</span>(<span className="text-[#ce9178]">'/predict'</span>, methods=[<span className="text-[#ce9178]">'POST'</span>])<br/>
+<span className="text-[#dcdcaa]">@app.route</span>(<span className="text-[#ce9178]">&apos;/predict&apos;</span>, methods=[<span className="text-[#ce9178]">&apos;POST&apos;</span>])<br/>
 <span className="text-[#c586c0]">def</span> <span className="text-[#dcdcaa]">predict</span>():<br/>
     &nbsp;&nbsp;&nbsp;&nbsp;data = request.get_json()<br/>
-    &nbsp;&nbsp;&nbsp;&nbsp;prediction = model.predict([data[<span className="text-[#ce9178]">'features'</span>]])<br/>
-    &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-[#c586c0]">return</span> jsonify({"{"}<span className="text-[#ce9178]">'prediction'</span>: prediction.tolist(){"}"})<br/>
+    &nbsp;&nbsp;&nbsp;&nbsp;prediction = model.predict([data[<span className="text-[#ce9178]">&apos;features&apos;</span>]])<br/>
+    &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-[#c586c0]">return</span> jsonify({"{"}<span className="text-[#ce9178]">&apos;prediction&apos;</span>: prediction.tolist(){"}"})<br/>
           </div>
         </div>
       </details>
@@ -38,7 +38,7 @@ model = pickle.load(<span className="text-[#4ec9b0]">open</span>(<span className
         <div className="card bg-[#e6d0a7] p-4 rounded-lg shadow-sm border border-[#c7a669] text-[#2b1d0f]">
           <h4 className="font-bold mb-2">2. Containerization (Docker)</h4>
           <p className="text-sm">
-            Deploying raw Python scripts can lead to "it works on my machine" errors due to dependency mismatches. Docker encapsulates the Model, API, Python runtime, and exact library versions (e.g., scikit-learn v1.0.2) into an isolated Container that runs identically anywhere.
+            Deploying raw Python scripts can lead to &quot;it works on my machine&quot; errors due to dependency mismatches. Docker encapsulates the Model, API, Python runtime, and exact library versions (e.g., scikit-learn v1.0.2) into an isolated Container that runs identically anywhere.
           </p>
         </div>
         <div className="card bg-[#e6d0a7] p-4 rounded-lg shadow-sm border border-[#c7a669] text-[#2b1d0f]">

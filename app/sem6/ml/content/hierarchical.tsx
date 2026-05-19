@@ -35,7 +35,7 @@ export const HierarchicalContent = () => (
           <div className="bg-white/5 p-4 rounded border border-white/10">
             <h5 className="font-bold text-[#fdf5e6] mb-1">1. Single Linkage (MIN)</h5>
             <p className="text-sm text-[#fdf5e6]/80">Distance between the <strong>NEAREST</strong> pair of points (one from each cluster).</p>
-            <p className="text-xs text-[#c7a669] mt-1 italic">Creates long, chain-like clusters ("chaining effect"). Highly sensitive to noise/outliers.</p>
+            <p className="text-xs text-[#c7a669] mt-1 italic">Creates long, chain-like clusters (&quot;chaining effect&quot;). Highly sensitive to noise/outliers.</p>
           </div>
           <div className="bg-white/5 p-4 rounded border border-white/10">
             <h5 className="font-bold text-[#fdf5e6] mb-1">2. Complete Linkage (MAX)</h5>
@@ -47,7 +47,7 @@ export const HierarchicalContent = () => (
             <p className="text-sm text-[#fdf5e6]/80">The average of all pairwise distances between points in cluster A and cluster B.</p>
           </div>
           <div className="bg-white/5 p-4 rounded border border-white/10">
-            <h5 className="font-bold text-[#fdf5e6] mb-1">4. Ward's Method</h5>
+            <h5 className="font-bold text-[#fdf5e6] mb-1">4. Ward&apos;s Method</h5>
             <p className="text-sm text-[#fdf5e6]/80">Merges the two clusters that result in the minimum increase in the total within-cluster variance.</p>
           </div>
         </div>

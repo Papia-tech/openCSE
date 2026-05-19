@@ -56,7 +56,7 @@ export default function Sidebar() {
             }`}
         >
           Chapters
-        </h2>
+        </aside>
 
         <ul className="flex-1 overflow-y-auto no-scrollbar space-y-0">
           {chapters.map((ch) => {
@@ -128,7 +128,7 @@ export default function Sidebar() {
               Take the Quiz
             </Link>
           </div>
-        </aside>
+        </div>
 
         <button
           onClick={() => setOpen(!open)}

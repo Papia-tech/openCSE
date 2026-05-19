@@ -14,15 +14,15 @@ export const NlpBasicsContent = () => (
         </div>
         <div className="card bg-[#e6d0a7] p-4 rounded-lg shadow-sm border border-[#c7a669] text-[#2b1d0f]">
           <h5 className="font-bold mb-1">Stop Words Removal</h5>
-          <p className="text-xs">Removing extremely common words (e.g., "the", "is", "at") that carry little semantic meaning.</p>
+          <p className="text-xs">Removing extremely common words (e.g., &quot;the&quot;, &quot;is&quot;, &quot;at&quot;) that carry little semantic meaning.</p>
         </div>
         <div className="card bg-[#e6d0a7] p-4 rounded-lg shadow-sm border border-[#c7a669] text-[#2b1d0f]">
           <h5 className="font-bold mb-1">Stemming</h5>
-          <p className="text-xs">Chopping off prefixes/suffixes to get a root (e.g., "running" → "run"). Very fast but often creates non-words.</p>
+          <p className="text-xs">Chopping off prefixes/suffixes to get a root (e.g., &quot;running&quot; → &quot;run&quot;). Very fast but often creates non-words.</p>
         </div>
         <div className="card bg-[#e6d0a7] p-4 rounded-lg shadow-sm border border-[#c7a669] text-[#2b1d0f]">
           <h5 className="font-bold mb-1">Lemmatization</h5>
-          <p className="text-xs">Using a dictionary to safely reduce words to their base linguistic form (e.g., "better" → "good"). Slower but highly accurate.</p>
+          <p className="text-xs">Using a dictionary to safely reduce words to their base linguistic form (e.g., &quot;better&quot; → &quot;good&quot;). Slower but highly accurate.</p>
         </div>
       </div>
 
@@ -31,7 +31,7 @@ export const NlpBasicsContent = () => (
         <p className="text-sm mb-2">Converting tokens into dense numerical vectors where semantic meaning is preserved.</p>
         <ul className="list-disc pl-5 text-sm space-y-1">
           <li><strong>Bag of Words (BoW) & TF-IDF:</strong> Sparse vectors representing exact word counts. Cannot capture context or word ordering.</li>
-          <li><strong>Word2Vec / GloVe:</strong> Dense vectors (e.g., 300 dimensions). Understands that "King" is to "Queen" what "Man" is to "Woman". Captures deep semantic relationships.</li>
+          <li><strong>Word2Vec / GloVe:</strong> Dense vectors (e.g., 300 dimensions). Understands that &quot;King&quot; is to &quot;Queen&quot; what &quot;Man&quot; is to &quot;Woman&quot;. Captures deep semantic relationships.</li>
         </ul>
       </div>
 
@@ -42,8 +42,8 @@ export const NlpBasicsContent = () => (
         <div className="mt-4 text-[#2b1d0f] text-sm space-y-3">
           <p>Prior to 2017, NLP relied on RNNs and LSTMs which processed text sequentially (slow, and forgot early words in long paragraphs).</p>
           <ul className="list-disc pl-5 space-y-2">
-            <li><strong>The Attention Mechanism:</strong> Allows a model to dynamically look at ALL words in a sentence simultaneously and weigh their importance when understanding a specific word. Example: In "The animal didn't cross the street because it was too tired", Attention helps the model know "it" refers to "animal", not "street".</li>
-            <li><strong>Transformers:</strong> An architecture (introduced in the paper "Attention Is All You Need") that relies entirely on Attention, ditching RNNs. Highly parallelizable.</li>
+            <li><strong>The Attention Mechanism:</strong> Allows a model to dynamically look at ALL words in a sentence simultaneously and weigh their importance when understanding a specific word. Example: In &quot;The animal didn&apos;t cross the street because it was too tired&quot;, Attention helps the model know &quot;it&quot; refers to &quot;animal&quot;, not &quot;street&quot;.</li>
+            <li><strong>Transformers:</strong> An architecture (introduced in the paper &quot;Attention Is All You Need&quot;) that relies entirely on Attention, ditching RNNs. Highly parallelizable.</li>
             <li><strong>LLMs (Large Language Models):</strong> Models like GPT (Generative Pre-trained Transformer) scale this architecture to hundreds of billions of parameters.</li>
           </ul>
         </div>

@@ -9,7 +9,7 @@ export const FraudDetectionContent = () => (
       <div className="note-box bg-[#f3e7c2] border-l-4 border-red-700 p-4 text-[#1B0D00] mb-6">
         <h4 className="font-bold text-red-800 mb-2">The Biggest Challenge: Class Imbalance</h4>
         <p className="text-sm mb-2">
-          Fraudulent transactions typically represent less than 0.1% to 1% of all transactions. A naive model predicting "Not Fraud" for everything would achieve 99.9% accuracy but fail completely at its job. Accuracy is a misleading metric here—we must use Precision-Recall curves or F1-Scores.
+          Fraudulent transactions typically represent less than 0.1% to 1% of all transactions. A naive model predicting &quot;Not Fraud&quot; for everything would achieve 99.9% accuracy but fail completely at its job. Accuracy is a misleading metric here—we must use Precision-Recall curves or F1-Scores.
         </p>
       </div>
 
@@ -36,7 +36,7 @@ export const FraudDetectionContent = () => (
               </tr>
               <tr>
                 <td className="p-2 font-bold">Cost-Sensitive Learning</td>
-                <td className="p-2">Assign high "Class Weights" to fraud cases, severely penalizing the algorithm when it misclassifies them.</td>
+                <td className="p-2">Assign high &quot;Class Weights&quot; to fraud cases, severely penalizing the algorithm when it misclassifies them.</td>
               </tr>
             </tbody>
           </table>

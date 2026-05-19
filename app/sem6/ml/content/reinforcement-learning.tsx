@@ -34,15 +34,15 @@ export const ReinforcementLearningContent = () => (
           Deep Dive: Q-Learning & The Bellman Equation
         </summary>
         <div className="mt-4 text-[#2b1d0f] text-sm space-y-3">
-          <p>Q-Learning is a model-free RL algorithm. The "Q" stands for Quality—how good is a specific action in a specific state.</p>
+          <p>Q-Learning is a model-free RL algorithm. The &quot;Q&quot; stands for Quality—how good is a specific action in a specific state.</p>
           <p>It iteratively updates a Q-Table using the <strong>Bellman Equation</strong>:</p>
           <div className="bg-black/10 p-3 rounded font-mono text-xs overflow-x-auto whitespace-nowrap text-center my-3">
-            Q(S, A) ← Q(S, A) + α [ R + γ × max(Q(S', A')) - Q(S, A) ]
+            Q(S, A) ← Q(S, A) + α [ R + γ × max(Q(S&apos;, A&apos;)) - Q(S, A) ]
           </div>
           <ul className="list-disc pl-5 space-y-1">
             <li><strong>α (Alpha):</strong> Learning Rate. How much new information overrides old.</li>
             <li><strong>γ (Gamma):</strong> Discount Factor. How much we care about future rewards vs immediate rewards.</li>
-            <li><strong>max(Q(S', A')):</strong> The highest expected Q-value for the next state S'.</li>
+            <li><strong>max(Q(S&apos;, A&apos;)):</strong> The highest expected Q-value for the next state S&apos;.</li>
           </ul>
         </div>
       </details>

@@ -9,7 +9,7 @@ export const PredictionRecommendationContent = () => (
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
         <div className="card bg-[#e6d0a7] p-4 rounded-lg shadow-sm border border-[#c7a669] text-[#2b1d0f]">
           <h4 className="font-bold mb-2">Collaborative Filtering</h4>
-          <p className="text-sm mb-2">Based on the principle: <i>"Users who agreed in the past will agree in the future."</i> It relies purely on user-item interaction history.</p>
+          <p className="text-sm mb-2">Based on the principle: <i>&quot;Users who agreed in the past will agree in the future.&quot;</i> It relies purely on user-item interaction history.</p>
           <ul className="list-disc pl-5 text-xs space-y-1">
             <li><strong>User-Based:</strong> Find users similar to the target user; recommend what they liked.</li>
             <li><strong>Item-Based:</strong> Find items similar to what the target user liked.</li>
@@ -20,9 +20,9 @@ export const PredictionRecommendationContent = () => (
           <h4 className="font-bold mb-2">Content-Based Filtering</h4>
           <p className="text-sm mb-2">Recommends items similar to ones the user previously liked, based explicitly on the <strong>features</strong> of the items (genre, tags, actors).</p>
           <ul className="list-disc pl-5 text-xs space-y-1">
-            <li>Builds a specific "user profile" based on item features.</li>
+            <li>Builds a specific &quot;user profile&quot; based on item features.</li>
             <li>Uses metrics like Cosine Similarity or TF-IDF.</li>
-            <li className="text-red-700 font-semibold mt-2">Disadvantage: Over-specialization (creates a "filter bubble", no serendipity).</li>
+            <li className="text-red-700 font-semibold mt-2">Disadvantage: Over-specialization (creates a &quot;filter bubble&quot;, no serendipity).</li>
           </ul>
         </div>
       </div>
@@ -39,7 +39,7 @@ export const PredictionRecommendationContent = () => (
           Deep Dive: The Cold Start Problem
         </summary>
         <div className="mt-4 text-[#2b1d0f] text-sm overflow-x-auto">
-          <p className="mb-3">The "Cold Start" is the primary weakness of Collaborative Filtering—what happens when there is no data?</p>
+          <p className="mb-3">The &quot;Cold Start&quot; is the primary weakness of Collaborative Filtering—what happens when there is no data?</p>
           <table className="w-full text-left border-collapse">
             <thead>
               <tr className="border-b border-[#c7a669]">
